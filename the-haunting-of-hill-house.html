@@ -8,32 +8,32 @@
     <meta name="description" content="The Haunting of Hill House, novel by Shirley Jackson"/>
     <link rel="icon" type="image/ico" href=""/>  <!-- ACTUALIZAR ICONO-->
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Lato:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script defer src="node_modules/swup/dist/swup.min.js"></script>
+    <script defer src="index.js"></script>
 </head>
 
 <body>
-  <script src="./index.js"></script>
-
   <header>
     <div class="container">
       <nav class="topnav">
         <ul>
-          <li><a href="index.html">Home</a></li>
+          <li><a href="/index.html">Home</a></li>
           <li class="dropdown">
-            <a href="novels.html" class="dropbtn">Novels</a>
+            <a href="/novels.html" class="dropbtn">Novels</a>
             <div class="dropdown-content">
               <a href="#">The Road Through the Wall</a>
               <a href="#">Hangsaman</a>
               <a href="#">The Bird's Nest</a>
               <a href="#">The Sundial</a>
-              <a href="the-haunting-of-hill-house.html">The Haunting of Hill House</a>
+              <a href="/the-haunting-of-hill-house.html">The Haunting of Hill House</a>
               <a href="#">We Have Always Lived in the Castle</a>
             </div>
           </li>
           <li class="dropdown">
-            <a href="collections.html" class="dropbtn">Collections & short fiction</a>
+            <a href="/collections.html" class="dropbtn">Collections & short fiction</a>
             <div class="dropdown-content">
-              <a href="the-lottery.html">The Lottery and Other Stories</a>
+              <a href="/the-lottery.html">The Lottery and Other Stories</a>
               <a href="#">The Magic of Shirley Jackson</a>
               <a href="#">Come Along with Me</a>
               <a href="#">Just an Ordinary Day</a>
@@ -50,15 +50,15 @@
         <h1>Shirley Jackson</h1>
         <nav>
           <ul>
-            <li><a href="novels.html">Novels</a></li>
-            <li><a href="collections.html">Collections & short fiction</a></li>
+            <li><a href="/novels.html">Novels,</a></li>
+            <li><a href="/collections.html">Collections & short fiction</a></li>
           </ul>  
         </nav>
       </div>
     </div>
   </header>
 
-  <main>
+  <main id="swup" class="transition-fade">
     <div class="book-page">
         <section class="section-home3">
             <h2>The Haunting of Hill House</h2>
@@ -116,13 +116,11 @@
             </p>
         </section>
     </div>
-  </main>
-
-  <footer>
-    <p>© Juan Luis Blanco de los Santos</p>
-    <p>Herramientas HTML y CSS 2020</p>
-  </footer>
-
+    <footer>
+      <p>© Juan Luis Blanco de los Santos</p>
+      <p>Herramientas HTML y CSS 2020</p>
+      </footer>
+    </main>
+    
 </body>
-
 </html>

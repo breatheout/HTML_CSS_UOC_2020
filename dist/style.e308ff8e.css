@@ -29,10 +29,6 @@ footer p {
     color: #f2f2f2;
 }
 
-h2:first-of-type {
-    margin-top: 2.5rem;
-}
-
 main {
     justify-content: center;
     color: #f0e7cb;
@@ -54,15 +50,6 @@ section {
     padding-bottom: 2rem;
 }
 
-/*.section-home, .section-home3 {
-    padding: 0rem 2rem 0rem 2rem;
-    background: #fff8dd38;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-}*/
-
 .section-home, .section-home3 {
     padding: 0rem 2rem 0rem 2rem;
     background: #fff;
@@ -78,7 +65,6 @@ section {
 
 .section-home2 {
     padding: 0rem 2rem 0rem 2rem;
-    /*! background-color: cornsilk; */
 }
 
 .section-home > h2, .section-home2 > h2, .section-home2 > h3 {
@@ -100,6 +86,10 @@ h1 {
     color: white;
 }
 
+h2:first-of-type {
+    margin-top: 2.5rem;
+}
+
 h2, h3, figcaption {
     font-family: 'Montserrat', sans-serif;
     margin: 1rem 0;
@@ -111,8 +101,86 @@ q, cite {
     quotes: "\201C" "\201D" "\2018" "\2019";
 }
 
+p {
+    font-family: 'Lato', sans-serif;
+    margin: 0.5rem 0;
+    color: #f0e7cb;
+}
+
+.topnav {
+    background-color: black;
+    overflow: hidden;
+    width: 100%;
+    text-align: left;
+}
+
+.topnav a {
+    color: #f2f2f2;
+    text-align: center;
+    padding: 1rem 1rem;
+    text-decoration: none;
+    font-size: 1rem;
+}
+  
+.topnav a:hover {
+    background-color: #f59a28;
+    color: black;
+}
+
+nav {
+    font-family: 'Montserrat', sans-serif;
+    color: #ffde5f;
+    align-content: space-around;
+}
+
+.author_pic{
+    max-width: 100%;
+    height: auto;
+    margin: 0.5rem;
+	float: left;
+	margin: 1rem 1rem 1rem auto;
+}
+
+.container {
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.main-container {
+    width: auto;
+}
+
+.box {
+    margin: 1rem;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+header {
+    background-color: rgb(255, 255, 255);
+    background-image: url(/green.4638285e.jpg);
+    place-items: center;
+    display: flex;
+    text-align: center;
+    border-bottom: #f59a28 solid 5px;
+    background-size: cover;
+}
+
+nav > ul > li {
+    display: inline-flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+/*** BLOCKQUOTE CODE FROM https://css-tricks.com/snippets/css/simple-and-nice-blockquote-styling/ ***/
+
 blockquote {
-    background: #fff8dd38;
+    background: #666;
     border-left: 10px solid #ffde5f;
     margin: 1.5em 10px;
     padding: 0.5em 10px;
@@ -132,48 +200,7 @@ blockquote p {
     display: inline;
 }
 
-p {
-    font-family: 'Lato', sans-serif;
-    margin: 0.5rem 0;
-    color: #f0e7cb;
-}
-
-.topnav {
-    background-color: #333;
-    overflow: hidden;
-    width: 100%;
-    text-align: left;
-}
-
-  
-.topnav a {
-    /*! float: left; */
-    color: #f2f2f2;
-    text-align: center;
-    padding: 1rem 1rem;
-    text-decoration: none;
-    font-size: 1rem;
-}
-  
-
-.topnav a:hover {
-    background-color: #f59a28;
-    color: black;
-}
-  
-
-.topnav a.active {
-    background-color: #4CAF50;
-    color: white;
-}
-
-nav {
-    font-family: 'Montserrat', sans-serif;
-    color: #ffde5f;
-    align-content: space-around;
-}
-
-/**** DROPDOWN MENU ****/
+/*** DROPDOWN MENU CODE FROM https://www.w3schools.com/howto/howto_css_dropdown.asp ***/
 
 .dropbtn {
     display: inline-block;
@@ -214,41 +241,11 @@ li.dropdown {
     display: block;
 }
 
-.author_pic{
-    max-width: 100%;
-    height: auto;
-    margin: 0.5rem;
-	float: left;
-	margin: 1rem 1rem 1rem auto;
-}
-
-.container {
-    margin: 0 auto;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.main-container {
-    width: auto;
-    /*! margin: 1rem; */
-}
-
-.box {
-    margin: 1rem;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-/* Video fluid */ 
+/*** VIDEO FLUID CODE FROM ANA HERNANDEZ ADEVA - PEC2 HTML Y CSS***/ 
 
 figure {
     margin-top: 30px;
     margin-bottom: 30px;
-    width: 70%;
     margin-left: auto;
     margin-right: auto;
     max-width: 800px;
@@ -257,7 +254,6 @@ figure {
 figcaption {
     font-size: 1rem;
     text-align: center;
-    /*! padding-top: 15px; */
 }
 
 .video-fluid {
@@ -282,23 +278,6 @@ figcaption {
     display: block;
     content: "";
     padding-top: 56.25%;
-}
-
-
-header {
-    background-color: rgb(255, 255, 255);
-    background-image: url(/green.4638285e.jpg);
-    background-size: 800px 800px;
-    place-items: center;
-    display: flex;
-    text-align: center;
-    border-bottom: #f59a28 solid 5px;
-}
-
-nav > ul > li {
-    display: inline-flex;
-    flex-flow: row wrap;
-    justify-content: center;
 }
 
 /*** STYLES FOR NOVELS.HTML ***/
@@ -376,14 +355,24 @@ figcaption {
     margin: 2rem 2rem 1rem 2rem;
 }
 
-section {
-    padding: 0rem 2rem 0rem 2rem;
+/*** TRANSITIONS CODE BY WEB DEV SIMPLIFIED https://www.youtube.com/watch?v=eVwH3VL1EsA ***/
+
+.transition-fade {
+    opacity: 1;
+    transition: 500ms;
+    transform: translateX(0);
+    transform-origin: bottom;
 }
 
+html.is-animating .transition-fade{
+    opacity: 1;
+    transform: translateY(100%);
+}
 
-/*** SOCIAL MEDIA ICONS FROM ***/
-
-
+html.is-leaving .transition-fade{
+    opacity: 0;
+    transform: translateY(0);
+}
 
 /*** MEDIA QUERIES ***/
 

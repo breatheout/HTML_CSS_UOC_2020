@@ -1,2 +1,1 @@
-const name = 'world';
-console.log(`Hello ${name}`);
+const swup = new Swup()
