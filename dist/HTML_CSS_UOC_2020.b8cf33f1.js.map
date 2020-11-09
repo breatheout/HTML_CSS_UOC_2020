@@ -1,0 +1,1 @@
+{"version":3,"sources":["index.js"],"names":["swup","Swup"],"mappings":";AAAA,IAAMA,EAAO,IAAIC","file":"HTML_CSS_UOC_2020.b8cf33f1.js","sourceRoot":"..","sourcesContent":["const swup = new Swup()"]}
