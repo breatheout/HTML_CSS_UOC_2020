@@ -31,6 +31,12 @@ footer p {
     line-height: 1rem;
 }
 
+.mini-logo {
+    float: left;
+    width: 25px;
+    padding-right: 5px;
+}
+
 main {
     justify-content: center;
     color: #f0e7cb;
@@ -133,6 +139,10 @@ nav {
     font-family: 'Montserrat', sans-serif;
     color: #ffde5f;
     align-content: space-around;
+}
+
+.logotype {
+    max-width: 3rem;
 }
 
 .author_pic{
@@ -351,11 +361,6 @@ figcaption {
     color: #333;
 }
 
-.bookpage-img {
-    float: right;
-    margin: 2rem 2rem 1rem 2rem;
-}
-
 /*** TRANSITIONS CODE BY WEB DEV SIMPLIFIED https://www.youtube.com/watch?v=eVwH3VL1EsA ***/
 
 .transition-fade {
@@ -375,9 +380,97 @@ html.is-leaving .transition-fade{
     transform: translateY(0);
 }
 
+/*** TYPEWRITER ANIMATION EDITADO DE CSS TRICKS***/
+
+.typewriter h2 {
+    width: min-content;
+    color: #f59a28;
+    font-family: monospace;
+    overflow: hidden; 
+    border-right: .15em solid rgb(58, 58, 58); 
+    white-space: nowrap; 
+    margin: 2rem auto; 
+    letter-spacing: .15em; 
+    animation: 
+      typing 5s steps(50, end),
+      blink-caret .5s step-end 1;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 40% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: rgb(255, 255, 255) }
+    100% { opacity: 0; }
+}
+
+/*** CLIP-PATH ***/
+
+.clip-me { 
+    max-width: 100px;
+    clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+    position: absolute;
+    right: 10px;
+    bottom: 20px;
+}
+
+.svg {
+    width: 300px;
+    align-content: center;
+    display: flex;
+}
+
+.top-img {
+    width: 100%;
+}
+
+/*** COVER HOVER ***/
+
+.cover-container {
+    float: right;
+    margin: 2rem 2rem 1rem 2rem;
+    height: 387px;
+}
+  
+.cover-image {
+    opacity: 1;
+    display: block;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+  
+.cover-middle {
+    transition: .5s ease;
+    opacity: 0;
+    float: right;
+    transform: translate(-20%, -700%);
+    text-align: center;
+}
+  
+.cover-container:hover .cover-image {
+    opacity: 0.2;
+}
+  
+.cover-container:hover .cover-middle {
+    opacity: 0.9;
+}
+  
+.cover-text a{
+    background-color: #f59a28;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    padding: 16px 32px;
+}
+
 /*** MEDIA QUERIES ***/
 
-@media only screen and (max-width: 550px){
+@media only screen and (max-width: 565px){
     .topnav li{
         display: flex;
     }
@@ -385,7 +478,16 @@ html.is-leaving .transition-fade{
     .story-list {
         columns: 1;
     }
+
 }
+
+@media only screen and (min-width: 565px){
+    .logotype {
+        float: left;
+    }
+
+}
+
 
 @media only screen and (max-width: 815px){
     .section-home>img {
@@ -429,5 +531,26 @@ html.is-leaving .transition-fade{
         font-size: 1rem;
         font-family: 'Julius Sans One', sans-serif;
         color: #333;
+    }
+
+    .svg {
+        width: 400px;
+    }
+
+}
+
+@media only screen and (min-width: 1900px) {
+    .top-img {
+
+        display: flex;
+        align-content: center;
+    }
+
+    .top-img-container{
+        background-color: black;
+    }
+
+    .svg {
+        width: 600px;
     }
 }

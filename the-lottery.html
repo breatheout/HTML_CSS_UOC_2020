@@ -8,6 +8,9 @@
     <meta name="description" content="The Lottery, short story by Shirley Jackson"/>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon_32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon_16x16.png">
+    <link rel="shortcut icon" href="img/favicon.png">
     <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>
     <script defer src="index.js"></script>
 </head>
@@ -17,6 +20,7 @@
     <div class="container">
       <nav class="topnav">
         <ul>
+          <li class="logotype"><img src="img/logo.png" class="logotype"></li>
           <li><a href="/index.html">Home</a></li>
           <li class="dropdown">
             <a href="/novels.html" class="dropbtn">Novels</a>
@@ -59,8 +63,19 @@
 
   <main id="swup" class="transition-fade">
     <div class="book-page">
+      <div class="top-img-container">
+        <picture>
+          <source media="(min-width: 1500px)" srcset="img/lottery-art-direction.jpg">
+          <source media="(min-width: 920px)" srcset="img/lottery-1280.jpg">
+          <source media="(min-width: 480px)" srcset="img/lottery-640.jpg">
+          <img src="img/lottery.jpg" alt="Still from Shirley (2020)" class="top-img">
+        </picture>
+      </div>
         <section class="section-home3">
-            <h2>The Lottery</h2>
+            <img src="img/Shirley_Jackson_signature.svg" alt="Shirley Jackson's signature" class="svg">
+            <div class="typewriter">
+            <h2>The Lottery</h2>  
+            </div>
             <ul class="keyinfo"> 
                 <li>Publication date: <time datetime="1948">1948</time></li>
                 <li>Pages: N/A - Short story</li>
@@ -76,7 +91,12 @@
             </p>
         </section>
         <section class="section-home2">
-            <img class="bookpage-img" src="img/Shirleylottery.jpg" alt="Book cover image">
+            <div class="cover-container">
+              <img src="img/Shirleylottery.jpg" alt="Avatar" class="cover-image">
+              <div class="cover-middle">
+                <div class="cover-text"><a href="https://www.newyorker.com/magazine/1948/06/26/the-lottery">Read the story</a></div>
+              </div>
+            </div>
             <h3>Sinopsis</h3>
             <p>
                 Details of contemporary small-town American life are embroidered upon a description of an annual rite known as "the lottery". In a small village of about 300 residents, 
@@ -139,10 +159,12 @@
         </section>
     </div>
     <footer>
-      <p>© Text and images from <a href="https://en.wikipedia.org/wiki/The_Lottery_and_Other_Stories">Wikipedia</a></p>
-      <p>Web design by Juan Luis Blanco de los Santos</p>  
+      <p> © Text and images from <a href="https://en.wikipedia.org/wiki/Shirley_Jackson">Wikipedia</a></p>
+      <img src="img/logo.png" class="mini-logo">
+      <p>Web design by Juan Luis Blanco</p>  
       <p>Herramientas HTML y CSS UOC 2020</p>
-      </footer>
+      <img class="clip-me" src="img/Jackson_shirley.jpg" alt="Shirley Jackson's close up">
+    </footer>
     </main>
     
 </body>
