@@ -176,11 +176,11 @@ nav {
 header {
     background-color: rgb(255, 255, 255);
     background-image: url(img/green.jpg);
+    background-size: cover;
     place-items: center;
     display: flex;
     text-align: center;
     border-bottom: #f59a28 solid 5px;
-    background-size: cover;
 }
 
 nav > ul > li {
@@ -380,35 +380,6 @@ html.is-leaving .transition-fade{
     transform: translateY(0);
 }
 
-/*** TYPEWRITER ANIMATION EDITADO DE CSS TRICKS***/
-
-.typewriter h2 {
-    width: min-content;
-    color: #f59a28;
-    font-family: monospace;
-    overflow: hidden; 
-    border-right: .15em solid rgb(58, 58, 58); 
-    white-space: nowrap; 
-    margin: 2rem auto; 
-    letter-spacing: .15em; 
-    animation: 
-      typing 5s steps(50, end),
-      blink-caret .5s step-end 1;
-  }
-  
-  /* The typing effect */
-  @keyframes typing {
-    from { width: 0 }
-    to { width: 40% }
-  }
-  
-  /* The typewriter cursor effect */
-  @keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: rgb(255, 255, 255) }
-    100% { opacity: 0; }
-}
-
 /*** CLIP-PATH ***/
 
 .clip-me { 
@@ -468,6 +439,67 @@ html.is-leaving .transition-fade{
     padding: 16px 32px;
 }
 
+/*** YOUTUBE JS ***/
+
+
+.wrapper {
+	max-width: 680px;
+	margin: 60px auto;
+	padding: 0 20px;
+}
+
+.youtube {
+	background-color: #000;
+	margin-bottom: 30px;
+	position: relative;
+	padding-top: 56.25%;
+	overflow: hidden;
+	cursor: pointer;
+}
+.youtube img {
+	width: 100%;
+	top: -16.82%;
+	left: 0;
+	opacity: 0.7;
+}
+.youtube .play-button {
+	width: 90px;
+	height: 60px;
+	background-color: #333;
+	box-shadow: 0 0 30px rgba( 0,0,0,0.6 );
+	z-index: 1;
+	opacity: 0.8;
+	border-radius: 6px;
+}
+.youtube .play-button:before {
+	content: "";
+	border-style: solid;
+	border-width: 15px 0 15px 26.0px;
+	border-color: transparent transparent transparent #fff;
+}
+.youtube img,
+.youtube .play-button {
+	cursor: pointer;
+}
+.youtube img,
+.youtube iframe,
+.youtube .play-button,
+.youtube .play-button:before {
+	position: absolute;
+}
+.youtube .play-button,
+.youtube .play-button:before {
+	top: 50%;
+	left: 50%;
+	transform: translate3d( -50%, -50%, 0 );
+}
+.youtube iframe {
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+}
+
 /*** MEDIA QUERIES ***/
 
 @media only screen and (max-width: 565px){
@@ -495,6 +527,24 @@ html.is-leaving .transition-fade{
         float: unset;
         place-items: center;
         margin: auto;
+    }
+
+    header {
+        background-color: rgb(24, 24, 24);
+        background-image: unset;
+        place-items: center;
+        display: flex;
+        text-align: center;
+        border-bottom: #f59a28 solid 5px;
+        background-size: cover;
+    }
+
+    .background {
+        background-image: unset;
+        background-color: rgb(24, 24, 24);
+        width: 100%;
+        padding: 3rem;
+        margin: 2rem 0rem 0rem 0rem;
     }
 }
 
@@ -535,6 +585,35 @@ html.is-leaving .transition-fade{
 
     .svg {
         width: 400px;
+    }
+
+    /*** TYPEWRITER ANIMATION EDITADO DE CSS TRICKS***/
+
+    .typewriter h2 {
+        width: min-content;
+        color: #f59a28;
+        font-family: monospace;
+        overflow: hidden; 
+        border-right: .15em solid rgb(58, 58, 58); 
+        white-space: nowrap; 
+        margin: 2rem auto; 
+        letter-spacing: .15em; 
+        animation: 
+        typing 5s steps(50, end),
+        blink-caret .5s step-end 1;
+    }
+    
+    /* The typing effect */
+    @keyframes typing {
+        from { width: 0 }
+        to { width: 40% }
+    }
+    
+    /* The typewriter cursor effect */
+    @keyframes blink-caret {
+        from, to { border-color: transparent }
+        50% { border-color: rgb(255, 255, 255) }
+        100% { opacity: 0; }
     }
 
 }
