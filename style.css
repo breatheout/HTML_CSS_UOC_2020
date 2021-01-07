@@ -175,7 +175,7 @@ nav {
 
 header {
     background-color: rgb(255, 255, 255);
-    background-image: url(img/green.jpg);
+    background-image: url(img/green2.jpg);
     background-size: cover;
     place-items: center;
     display: flex;
@@ -549,6 +549,24 @@ html.is-leaving .transition-fade{
 }
 
 @media only screen and (min-width: 1200px) {
+    header {
+        background-color: rgb(255, 255, 255);
+        background-image: url(img/green.jpg);
+        background-size: cover;
+        place-items: center;
+        display: flex;
+        text-align: center;
+        border-bottom: #f59a28 solid 5px;
+    }
+
+    .background {
+        background-image: url("img/header-background2.jpg");
+        background-size: cover;
+        width: 100%;
+        padding: 3rem;
+        margin: 2rem 0rem 0rem 0rem;
+    }
+
     .section-home {
         padding: 2rem 5rem;
     }
